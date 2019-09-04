@@ -2,14 +2,14 @@ from scipy.stats import chi2, norm
 import math
 # from copy import copy
 
-Xi = float(input('XI ')) #3734   
-a = float(input('a ')) #1687 
-c = float(input('c ')) #0
-m = float(input('m ')) #21474836434  
-n = int(input('n ')) #40
-min_n = float(input('min ')) # 0
-max_n = float(input('max ')) #0
-alpha = float(input('alpha ')) #0.05
+# Xi = float(input('XI ')) #3734
+# a = float(input('a ')) #1687
+# c = float(input('c ')) #0
+# m = float(input('m ')) #21474836434
+# min_n = float(input('min ')) # 0
+# n = int(input('n ')) #40
+# max_n = float(input('max ')) #0
+# alpha = float(input('alpha ')) #0.05
 
 
 def get_numbers(Xi, a, c, m, n, min_n, max_n):
@@ -101,11 +101,10 @@ def increasing_streak(random_numbers, alpha):
 
 
 
-random_numbers = get_numbers(Xi, a, c, m, n, min_n, max_n)
+# random_numbers = get_numbers(Xi, a, c, m, n, min_n, max_n)
 
 
-export_to_txt(random_numbers)
+# export_to_txt(random_numbers)
 
-print(chi_square(n, random_numbers, alpha))
-print(increasing_streak(random_numbers, alpha))
-
+# print(chi_square(n, random_numbers, alpha))
+# print(increasing_streak(random_numbers, alpha))

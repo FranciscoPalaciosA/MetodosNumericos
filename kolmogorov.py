@@ -38,5 +38,3 @@ if D < DTable:
     print("Sí es aceptado, la prueba es uniforme")
 else:
     print("No es aceptado, la prueba no es uniforme")
-
-

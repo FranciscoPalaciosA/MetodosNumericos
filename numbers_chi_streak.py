@@ -22,11 +22,11 @@ def get_numbers(Xi, a, c, m, n, min_n, max_n):
 
     return (random_numbers)
 
-def export_to_txt(random_number,min_n ,max_n):
+def export_to_txt(random_numbers,min_n ,max_n):
     try:
         f= open("random_numbers.txt","w+")
         for number in random_numbers:
-            f.write("%.16f\r\n" % (min_n + (number*(max_n-min_n))))
+            f.write("%f\r\n" % (min_n + (number*(max_n-min_n))))
         f.close()
         return 1
     except:

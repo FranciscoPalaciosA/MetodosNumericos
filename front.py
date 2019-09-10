@@ -1,12 +1,11 @@
 from tkinter import *
 import numbers_chi_streak as nums
+import kolmogorov as kol
 
 tk = Tk()
 
 inputs = ['X:','a:','c:','m:','N:', 'alpha:','min:','max:']
 values = [3734,1687,0,21474836434,40,0.05,0,6]
-
-
 
 
 def generar():
@@ -51,6 +50,7 @@ def hipotesis():
         print("Genera los números aleatorios primero!")
     else:
         print(nums.chi_square(N, random_numbers, alpha))
+        kol.kolmogorov(random_numbers)
         print(nums.increasing_streak(random_numbers, alpha))
 
 def on_entry_click(event):
@@ -76,6 +76,7 @@ for c in inputs:
     r = r + 1
 
 Label(text="G.N.A", width=10, height=1).grid(row=0,column=4)
+message=Label(text="beto", width=10, height=1).grid(row=7, column=4)
 Button(text="Generar txt", width=15, height=1, command=generar).grid(row=2, column=4)
 Button(text="Prueba de hipótesis", width=15, height=1, command=hipotesis).grid(row=5, column=4)
 

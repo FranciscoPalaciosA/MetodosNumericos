@@ -17,11 +17,10 @@ def kolmogorov(random_numbers):
     dMinus = max(dMinus)
 
     D = max(dPlus, dMinus)
-    #print("D = ", D)
     DTable = ksone.ppf(1 - 0.05/2, N)
-    #print("DTable = ", DTable)
 
+    result = "Kolmogorov:\nCon D = "+str(D)+"\nCon DTable = "+str(DTable)
     if D < DTable:
-        print("Sí es aceptado, la prueba es uniforme")
+        return result+"\nSí es aceptado, la prueba es uniforme"
     else:
-        print("No es aceptado, la prueba no es uniforme")
+        return result+"\nNo es aceptado, la prueba no es uniforme"

@@ -36,22 +36,8 @@ def generar():
         min_n = float(inputlst[6].get()) # 0
         max_n = float(inputlst[7].get()) #0
         random_numbers = nums.get_numbers(Xi,a,c,m,N,min_n,max_n)
-        nums.export_to_txt(random_numbers, min_n, max_n)
+        nums.export_to_txt(random_numbers, min_n, max_n, alpha, N)
 
-def hipotesis():
-    aux = 0
-    try:
-        alpha
-    except NameError:
-        aux = 1
-
-    # Test whether variable is defined to be None
-    if aux is 1:
-        print("Genera los números aleatorios primero!")
-    else:
-        print(nums.chi_square(N, random_numbers, alpha))
-        kol.kolmogorov(random_numbers)
-        print(nums.increasing_streak(random_numbers, alpha))
 
 def on_entry_click(event):
     if event.widget.get() == "Campo requerido...":
@@ -76,8 +62,6 @@ for c in inputs:
     r = r + 1
 
 Label(text="G.N.A", width=10, height=1).grid(row=0,column=4)
-message=Label(text="beto", width=10, height=1).grid(row=7, column=4)
 Button(text="Generar txt", width=15, height=1, command=generar).grid(row=2, column=4)
-Button(text="Prueba de hipótesis", width=15, height=1, command=hipotesis).grid(row=5, column=4)
 
 mainloop()

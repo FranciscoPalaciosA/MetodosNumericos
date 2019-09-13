@@ -1,0 +1,12 @@
+Kolmogorov:
+Con D = 0.13329213851976385
+Con DTable = 0.2101154594142192
+Sí es aceptado, la prueba es uniforme
+Chi-Cuadrada:
+Con chi = 10.0
+Con chiTable = 16.91897760462045
+Sí es aceptado, la prueba es uniforme
+Rachas:
+Con z = 0.8540267903587465
+Con zTable = 1.959963984540054
+Sí es aceptado por rachas

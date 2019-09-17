@@ -93,6 +93,6 @@ def increasing_streak(random_numbers, alpha):
 
     result = "Rachas:\nCon z = "+str(z_r)+"\nCon zTable = "+str(z_table)
     if z_r < z_table:
-        return result+"\nSí es aceptado por rachas"
+        return result+"\nLa prueba sí es independiente"
     else:
-        return result+"\nNo es aceptado por rachas"
+        return result+"\nLa prueba no es independiente"
